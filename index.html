@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>D MEAL DB!</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -99,7 +101,9 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h1 class="title">Meal IMG-A-Z</h1>
+                            <figure class="image is-square">
+                                <img src="#">
+                            </figure>
                             <h2 class="subtitle">meal name</h2>
                         </div>
                         <footer class="card-footer">
@@ -120,10 +124,10 @@
             <p class="title">
                 Random Meal
             </p>
-            <button class="button is-success"> Try Random Meal</button>
+            <button class="button is-success" id="randombtn"> Try Random Meal</button>
         </div>
 
-        <div class="card has-text-centered">
+        <div class="card has-text-centered" id="randomDiv">
             <div class="card-content">
                 <h1 class="title" style="color: black;">Which Meal is it going to be? </h1>
             </div>
@@ -139,6 +143,7 @@
             </P>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
